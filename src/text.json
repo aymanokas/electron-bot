@@ -1,0 +1,35 @@
+{
+  "header" : " Existant déjà depuis 2008, sous le nom de Club Robotique FSR. Chaque année, nous organisons et participons à des compétitions nationales et internationales de Robotique. Pour cela, les membres du Club travaillent ensemble à l'élaboration des robots dont les normes sont fixées.pour plus d'information ",
+  "website" : " robotiquefsr.com",
+  "email" : " aymanekas@gmail.com",
+  "contact" : " ou contacter ",
+  "descriptionSection" : {
+    "Introduction":{
+      "title" : "Introduction", 
+      "body" : "Pendant mes 4 ans au sein du Club Robotique FSR, j’ai créé et participé à la production de plusieurs robots. Les uns étaient autonomes, d’autres avaient besoin d’une méthode pour les guider (Application Android habituellement). Un suiveur de ligne, un robot téléguidé ou bien un robot éviteur d’obstacle. Ceux sont les trois types de robots que chaque membres du club est capables de construire –seul ou avec une équipe-. Ainsi on passe la majorité de notre temps à essayer de les perfectionner."
+    },
+    "description":{
+      "title" : "Qu'est ce que c'est Interactive Robot ?", 
+      "body" : "Interactive robot sera en premier temps sous forme d’application valable sur une plateforme (PC ou bien raspberry). Cette application aura la capacité d’interagir avec un être humain, en d’autre terme réaliser un ChatBot (intelligent ou pas) est la première tâche. Le Bot doit recevoir des messages (à travers le clavier en premier temps, puis en utilisant une entrée vocale) puis donner la réponse adéquate. La seconde tâche sera la capacité de reconnaitre un visage et détecter s’il est déjà présent sur une base de données précédemment mise en place. S’il n’existe pas, le bot doit l’enregistrer, puis poser quelques questions basic pour qu’il puisse le reconnaitre facilement et instantanément la prochaine fois."
+    },
+    "inspiration":{
+      "title" : "D'ou venait l'inspiration ?", 
+      "body1" :" ‘ L’ennui assassine les cerveaux ‘. La meilleure méthode de contrer la monotonie à mon avis, c’est d’essayer d’innover. Je parle d’une innovation locale, au niveau de notre club, de notre faculté et de notre ville, voir même au niveau de notre pays !" ,
+      "body2" : "Je suis un fan du monde Marvel, un fan d’Iron man. Tout Fan comme moi connait bien le fameux ‘ JARVIS ’. Un system artificiel dotée d’une intelligence hors du commun. Le héros du film l’a créé pour qu’il l’aide a géré sa vie quotidienne. Ensuite il l’a perfectionné pour qu’il puisse avoir accès total a la vie de son créateur ‘Tony’. L’intelligence artificielle de ‘Jarvis’ lui permet d’avoir un control total ! Finalement je me suis dit, pourquoi ne pas tenter et réaliser un simple truc semblable, sans avoir a défié la logique biensûr !"
+    },
+    "technologies":{
+      "title" : "Type de technologies utilisées"
+    },
+    "Perspective":{
+      "title" : "Perspective", 
+      "body" : [
+      "Capacité de bouger",
+      "Capacité de maintenir une discussion",
+      "Capacité de reconnaitre les gens",
+      "Capacité d’effectuer des recherches internet",
+      "Capacité de gérer son environnement (Ouvrir les portes, allumer la lumiere ect…)",
+      "Disponibilité sur mobile"
+     ]
+    }
+  }
+}
