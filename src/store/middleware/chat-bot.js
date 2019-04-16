@@ -4,6 +4,7 @@ import * as constants from "../actions/constants"
 import { msgChatMessageSuccess, msgChatMessageError } from "../actions/chatBot"
 import randomBool from "random-bool"
 import { addResponseMessage } from 'react-chat-widget'
+import store from '../store'
 
 const client = new ApiAiClient({
   accessToken: "78236799780a479eae176aff8e5760c5"
@@ -13,6 +14,14 @@ const asyncSendMessage = async text => {
   const [err, response] = await to(client.textRequest(text))
   const { result: { fulfillment: { speech } } } = response
   addResponseMessage(speech)
+  const synth = window.speechSynthesis
+  let speechUtterance = new SpeechSynthesisUtterance(speech)
+  speechUtterance.rate = store.getState().speech.speechDefaultSettings.rate
+  speechUtterance.pitch = store.getState().speech.speechDefaultSettings.volume
+  speechUtterance.volume = store.getState().speech.speechDefaultSettings.pitch
+  speechUtterance.voice = speechSynthesis.getVoices()[0]
+  synth.speak(speechUtterance)
+
   return [err, speech]
 }
 

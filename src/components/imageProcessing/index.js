@@ -1,11 +1,17 @@
-import React from 'react'
+import React, {Component} from 'react'
+import ColorTracking from './colorTracking';
+import FaceTracking from './faceTracking';
 
-const ImageProcessing = (props) => {
-  return (
-    <div>
-      <h1>Image Processing</h1>
-      <i onClick={() => props.handleResetView()} className='fas fa-arrow-alt-circle-left iconback' />
-    </div>
+class ImageProcessing extends Component {
+
+render(){
+return (
+  <>
+  <i onClick={() => this.props.handleResetView()} className='fas fa-arrow-alt-circle-left iconback' />
+   {/* <ColorTracking/> */}
+   <FaceTracking/>
+   </>
   )
+}
 }
 export default ImageProcessing

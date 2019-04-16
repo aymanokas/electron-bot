@@ -44,9 +44,4 @@ export const ResetFeaturesView = _ => dispatch => {
   })
 }
 
-export const ToggleVoiceRecognition = (data) => dispatch => {
-  dispatch({
-    type:constants.START_VOICE_RECOGNITION,
-    data : data
-  })
-}
+

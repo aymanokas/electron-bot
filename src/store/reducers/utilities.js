@@ -12,8 +12,7 @@ const initialState = {
     isDefaultModeActive: false,
     isImageProcessingActive: false,
     isSimpleChatActive: false,
-    isUserInterfaceActive: false,
-    isVocalChatActive: false
+    isUserInterfaceActive: false
   }
 }
 
@@ -28,14 +27,6 @@ export default function (state = initialState, action) {
       return {
         ...state,
         featureViews: { ...action.data }
-      }
-      case constants.START_VOICE_RECOGNITION:
-      return {
-        ...state,
-        activeFeature :{
-          ...state.activeFeature,
-          isVocalChatActive : action.data
-        }
       }
     default :
       return state

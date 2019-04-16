@@ -27,7 +27,7 @@ export const VocalChatStyle = {
   rotationBall:{
     height: 300,
     width: 300,
-    animation: props => props.isVocalChatActive && 'ball-spin infinite .05s 0s linear'
+    animation: props => props.isListening && 'ball-spin infinite .05s 0s linear'
   },
   '@keyframes ball-spin' : {
     '0% ':{
