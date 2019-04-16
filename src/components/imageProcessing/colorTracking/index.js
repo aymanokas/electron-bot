@@ -12,13 +12,12 @@ class ColorTracking extends Component {
     let video = window.document.getElementById('video')
     let canvas = document.getElementById('canvas')
     if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && video) {
-      // Not adding `{ audio: true }` since we only want video now
       navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-          //video.src = window.URL.createObjectURL(stream);
           video.srcObject = stream;
           video.play();
       });
     }
+    
     tracker.on('track', e => {
       if(e.data.length > 0) {
         let context = canvas.getContext('2d')
@@ -36,17 +35,17 @@ class ColorTracking extends Component {
         context.clearRect(0, 0, canvas.width, canvas.height)}
     })
     /**END */
-
   }
-render(){
+
+  render(){
     let {classes} = this.props
-return (
-    <div className={classes.colorTrackingRoot}>
-      <h2 className={classes.title}>The colors being tracked is <span className={classes.yellowText}>Yellow</span>, <span className={classes.magentaText}>Magenta</span> and <span className={classes.cyanText}>Cyan</span></h2>
-      <canvas id="canvas" width="700" height="500"></canvas>
-      <video id="video" width="700" height="500" loop muted></video>
-    </div>
-  )
+    return (
+        <div className={classes.colorTrackingRoot}>
+          <h2 className={classes.title}>The colors being tracked is <span className={classes.yellowText}>Yellow</span>, <span className={classes.magentaText}>Magenta</span> and <span className={classes.cyanText}>Cyan</span></h2>
+          <canvas id="canvas" width="700" height="500"></canvas>
+          <video id="video" width="700" height="500" loop muted></video>
+        </div>
+    )
 }
 }
 export default injectSheet(ColorTrackingStyle)(ColorTracking)
